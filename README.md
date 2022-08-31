@@ -1,6 +1,6 @@
 ![](https://github.com/rtorreson/codehub/blob/master/public/featurescreanshot.png?raw=true)
 # MS3 CodeHub
-A codehub hub.
+A codehub.
 
 An app that organizes your code snippets into collections of cheat sheets and allows you to view, like and save others'.
 
