@@ -1,12 +1,12 @@
 ![](https://github.com/rtorreson/codehub/blob/master/public/featurescreanshot.png?raw=true)
-# MS3 Cheat-Hub
-A cheatsheet hub.
+# MS3 CodeHub
+A codehub hub.
 
 An app that organizes your code snippets into collections of cheat sheets and allows you to view, like and save others'.
 
 The project is developed as part of MS3 Data Centric module at Code Institute. It is written with a Flask/Python restful backend API, and a React/Typescript CRA frontend. 
 
-Additionally, the restful backend API can be viwed at. For a sample response, please visit the [/api/snippets](https://cheathub-backend.herokuapp.com/api/snippets) endpoint.
+Additionally, the restful backend API can be viwed at. For a sample response, please visit the [/api/snippets](https://codehub-backend.herokuapp.com/api/snippets) endpoint.
 
 
 <br />
@@ -169,7 +169,7 @@ The project can be understood as a library of user-created <em><b>Albums</b></em
 #### Arrival
 -  As a new vistor, I want to have a good understanding of what the website does
     - User arrives at home page.
-      - The screen for `Cheathub` appears with a description of its functionality.
+      - The screen for `CodeHub` appears with a description of its functionality.
       - User reads description.
     - User continues.
 
@@ -428,12 +428,11 @@ Please view them [here](https://github.com/rtorreson/codehub/tree/master/public)
 ### Code Testing
 #### Frontend
 ##### Performance, Accessibility, Best Practices, SEO, PWA
-[View Latest Results](https://lighthouse-vercel-lighthouse-integration.vercel.app/reports/cheathub-1rxs3u78h-israelias.vercel.app)
 - Lighthouse via Vercel is used to test performace, which produces unique results on every `git push`. [lighthouse-badges](https://github.com/emazzotta/lighthouse-badges) is used to generate new badges for every deployment by installing ```npm i -g lighthouse-badges``` and pushing the new hashed url to the array of urls:
     ```
     lighthouse-badges 
     -o docs/badges -r 
-    -u https://cheathub.vercel.app/ [... all other urls]
+    -u https://codehub.netlify.com/ [... all other urls]
                        
    # Output to docs/badges
    # Badges will contain the respective
@@ -462,7 +461,7 @@ Please view them [here](https://github.com/rtorreson/codehub/tree/master/public)
 ## Cloning This Repo
 - Clone this repo by running `git clone httpsL//github.com/rtorreson/codehub`
 - at the jump, `cd` to the name of this repo:
-`cd cheathub`
+`cd codehub`
   ### [`cd frontend`](https://github.com/rtorreson/codehub/tree/master/frontend)
   Please visit the [frontend](https://github.com/rtorreson/codehub/tree/master/frontend) root directory for details on required modules via `yarn install` and to start the frontend development server on `localhost:3000`.
   ### [`cd backend`](https://github.com/rtorreson/codehub/tree/master/backend)
