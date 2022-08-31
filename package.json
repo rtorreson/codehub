@@ -1,0 +1,24 @@
+{
+  "name": "codehub",
+  "version": "1.0.0",
+  "description": "Codehub",
+  "main": "index.js",
+  "repository": "https://github.com/rtorreson/codehub.git",
+  "author": "Rafael Torreson <rafael.torreson@hotmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  },
+  "scripts": {
+    "start": "concurrently \"yarn start:frontend\" \"yarn start:backend\"",
+    "start:frontend": "yarn workspace @cheathub/frontend start",
+    "start:backend": "yarn workspace @cheathub/backend start",
+    "build:frontend": "yarn workspace @cheathub/frontend build",
+    "test:frontend": "yarn workspace @cheathub/frontend test"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
+}
