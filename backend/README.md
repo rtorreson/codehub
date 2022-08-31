@@ -1,8 +1,8 @@
-[Back to root](https://github.com/israelias/cheathub#contents)  
-[Go to frontend](https://github.com/israelias/cheathub/tree/master/backend)
+[Back to root](https://github.com/rtorreson/codehub#contents)  
+[Go to frontend](https://github.com/rtorreson/codehub/tree/master/backend)
 # MS3 Cheat-Hub Backend
 
-The restful API is deployed at [cheathub-backend.herokuapp.com/](https://cheathub-backend.herokuapp.com/)
+The restful API is deployed at [codehub-backend.herokuapp.com/](https://codehub-backend.herokuapp.com/)
 
 > *Note:* Open API spec is forthcoming. Please see `database/models.py` to preview the snippet, collection and user document models.
 
@@ -12,8 +12,8 @@ The restful API is deployed at [cheathub-backend.herokuapp.com/](https://cheathu
 git init
 git add .
 git commit -m "Initialize for Heroku deployment"
-# heroku git:remote -a cheathub-backend    
-git remote add heroku git@heroku.com:cheathub-backend.git
+# heroku git:remote -a codehub-backend    
+git remote add heroku git@heroku.com:codehub-backend.git
 
 #pull heroku but then checkback out our current local master and mark everything as merged
 git pull heroku master
@@ -30,7 +30,7 @@ rm -fr .git
 cd -
 ```
 
-heroku git:remote -a cheathub-backend    
+heroku git:remote -a codehub-backend    
 git push heroku master
 
 ## Development Server Configuration
@@ -67,13 +67,13 @@ A connection string from Mongo Atlas for `Mongo Engine` to connect to remotely.
 To recreate:
 - Create an account with [MongoDB Atlas](https://www.mongodb.com).
 - Create a Cluster named `hub`.
-- Create a Database named `cheathubdb`.
+- Create a Database named `codehubdb`.
 - Click `Connect` to generate a connection string.
 
 Set the variable to this connection string: 
 ```python
 # env.py
-os.environ.setdefault("MONGODB_HOST", "mongodb+srv://<username>:<password>@hub.4kotr.mongodb.net/cheathubdb?retryWrites=true&w=majority")
+os.environ.setdefault("MONGODB_HOST", "mongodb+srv://<username>:<password>@hub.4kotr.mongodb.net/codehubdb?retryWrites=true&w=majority")
 ```
 
 ### `SECRET_KEY`
@@ -152,7 +152,7 @@ The Collections named `snippet`, `user`, and `collection` will automatically be 
 You can interact with the database via Mongo shell:
 ```python
 show dbs
-use cheathubdb
+use codehubdb
 show collections
 db.users.find().pretty()
 ```
