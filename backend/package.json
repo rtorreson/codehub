@@ -1,8 +1,8 @@
 {
-  "name": "@cheathub/backend",
+  "name": "@codehub/backend",
   "version": "1.0.0",
   "description": "Flask backend.",
-  "author": "israelias <israelias.js@gmail.com>",
+  "author": "Rafael Torreson <rafael.torreson@hotmail.com>",
   "private": true,
   "scripts": {
     "virtualenv": "pip install virtualenv && virtualenv venv",
